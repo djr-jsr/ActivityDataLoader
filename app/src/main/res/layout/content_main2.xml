@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="@string/startapp"
+        android:textSize="30sp" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb1"
+        android:layout_width="wrap_content"
+        style="@style/SwitchButtonStyle"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:checked="false"
+        app:kswAnimationDuration="500"
+        app:kswFadeBack="true"
+        app:kswThumbHeight="50dp"
+        app:kswThumbWidth="50dp"
+        app:kswTintColor="@color/colorPrimary" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="120"
+        android:src="@drawable/run" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="**For running the app, marshmallow users are requested to allow the location, storage, and phone permission."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+</LinearLayout>

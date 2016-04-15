@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.snigdhanup.activitydataloader.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="?attr/colorPrimary"
+             app:popupTheme="@style/AppTheme.PopupOverlay" /> -->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffff"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/activity"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="70"
+            android:weightSum="90">
+
+            <RadioButton
+                android:id="@+id/Cycling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/Cycling" />
+
+            <RadioButton
+                android:id="@+id/Walking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/Walking" />
+
+            <RadioButton
+                android:id="@+id/Driving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/Driving" />
+
+            <RadioButton
+                android:id="@+id/Stationary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/Stationary" />
+
+            <RadioButton
+                android:id="@+id/Running"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="true"
+                android:text="@string/Running" />
+
+            <RadioButton
+                android:id="@+id/ClimbingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/ClimbingUp" />
+
+            <RadioButton
+                android:id="@+id/ClimbingDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/ClimbingDown" />
+
+            <RadioButton
+                android:id="@+id/SitUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="false"
+                android:text="@string/SitUp" />
+
+            <RadioButton
+                android:id="@+id/NoneOfAbove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:checked="true"
+                android:text="@string/NoneOfAbove" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center_horizontal"
+            android:text="Start"
+            android:textSize="30sp" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb2"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="20"
+            android:checked="false"
+            android:gravity="center_horizontal"
+            app:kswAnimationDuration="500"
+            app:kswFadeBack="true"
+            app:kswThumbHeight="50dp"
+            app:kswThumbWidth="50dp"
+            app:kswTintColor="@color/ksw_md_ripple_checked" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

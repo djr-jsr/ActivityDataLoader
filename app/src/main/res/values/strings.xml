@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ActivityDataLoader</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="server_uri">http://10.5.18.66/~sndas/ActivityDataLoggerTemp/uploadfile.php</string>
+    <!--<string name="server_uri">http://10.5.19.232/ActivityDataLogger/uploadfile.php</string>
+    -->
+    <string name="to_be_uploaded_file_path">/ActivityDataLogger1/ToBeUploaded/</string>
+    <string name="archive_file_path">/ActivityDataLogger1/Archive/</string>
+    <string name="text">**For running the app, marshmallow users are requested to allow the location, storage, and phone permission.</string>
+    <!--<string name="server_ip">http://10.5.19.232</string>
+    --><!--<string name="upload_interval1">1</string>-->
+    <string name="hello_world">Hello world!</string>
+    <string name="activity">Activity List</string>
+    <string name="startapp">Start App</string>
+    <string name="stopapp">Stop App</string>
+    <string name="Cycling">Cycling</string>
+    <string name="Walking">Walking</string>
+    <string name="Driving">Driving</string>
+    <string name="Stationary">Stationary</string>
+    <string name="Running">Running</string>
+    <string name="ClimbingUp">Climbing Up</string>
+    <string name="ClimbingDown">Climbing Down</string>
+    <string name="SitUp">Sit-up</string>
+    <string name="NoneOfAbove">None of above</string>
+    <string name="radiostart">Start</string>
+    <string name="radioend">End</string>
+    <string name="title_activity_main">ActivityDataLogger</string>
+</resources>

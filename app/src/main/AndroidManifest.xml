@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.snigdhanup.activitydataloader">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/run"
+        android:label="ActivityDataLoader"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.snigdhanup.activitydataloader.Main2Activity"
+            android:label="ActivityDataLoader"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.snigdhanup.activitydataloader.MainActivity"
+            android:label="Main2Activity"
+            android:parentActivityName="com.example.snigdhanup.activitydataloader.Main2Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.snigdhanup.activitydataloader.Main2Activity" />
+            <intent-filter>
+                <action android:name="com.example.snigdhanup.activitydatalogger.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.snigdhanup.activitydataloader.FileUploadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps" />
+        <service
+            android:name="com.example.snigdhanup.activitydataloader.FileUploadService"
+            android:enabled="true"
+            android:exported="false" />
+        <meta-data
+            tools:replace="android:value"
+            android:name="com.google.android.gms.version"
+            android:value="8115000" />
+        <service
+            android:name="com.example.snigdhanup.activitydataloader.DataRecorderService"
+            android:enabled="true"
+            android:exported="false" />
+        <activity android:name="com.example.snigdhanup.activitydataloader.SelectActivity" />
+    </application>
+
+</manifest>
